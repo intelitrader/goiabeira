@@ -1,5 +1,6 @@
 ﻿using mobile_app.API;
 using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,14 +13,17 @@ namespace mobile_app.Views
         {
             InitializeComponent();
         }
-        public async void Cadastrar(string name, string age, string surname = null)
-        {
-            await APIService.CadastrarUsuario(name, age, surname);
-        }
         private void btnCadastro_Clicked(object sender, EventArgs e)
         {
-            Cadastrar(txtName.Text, txtAge.Text, txtSurname.Text);
-            Navigation.PushAsync(new EnviadoPage());
+            var result = APIService.CadastrarUsuario(txtName.Text, txtAge.Text, txtSurname.Text).Result;
+            if (result == "error")
+            {
+                Navigation.PushAsync(new ErrorPage());
+            }
+            else 
+            { 
+                Navigation.PushAsync(new EnviadoPage());
+            }
         }
     }
 }
