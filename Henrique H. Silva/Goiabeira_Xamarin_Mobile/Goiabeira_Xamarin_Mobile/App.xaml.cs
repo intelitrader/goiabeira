@@ -10,7 +10,7 @@ namespace Goiabeira_Xamarin_Mobile
         {
             InitializeComponent();
 
-            MainPage = new Cadastro();
+            MainPage = new NavigationPage(new Cadastro());
         }
 
         protected override void OnStart()

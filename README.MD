@@ -8,4 +8,4 @@
 
 - 4 - Após isso tudo estará rodado. 
 
-- 5 - Caso de algum erro ao conectar na WebApi, Habilitei o Docker no seu firewall para receber entreadas porta 8000.
+- 5 - Caso de algum erro ao conectar na WebApi, Habilitei o Docker no seu firewall para receber entradas na porta 8000.

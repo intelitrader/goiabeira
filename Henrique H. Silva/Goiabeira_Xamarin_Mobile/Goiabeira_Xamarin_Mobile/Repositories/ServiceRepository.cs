@@ -16,7 +16,7 @@ namespace Goiabeira_Xamarin_Mobile.Repositories
             {
                 try
                 {
-                    Uri uri = new Uri(string.Format("http://IPV4_ADDRESS:8000/api/Usuario"));
+                    Uri uri = new Uri(string.Format("http://IP_V4_ADRESS:8000/api/Usuario"));
                     var content = new StringContent(JsonConvert.SerializeObject(NovoUsuario), Encoding.UTF8, "application/json");
                 
                     HttpResponseMessage response = await client.PostAsync(uri, content);
@@ -26,6 +26,32 @@ namespace Goiabeira_Xamarin_Mobile.Repositories
                 catch (Exception)
                 {
                     return "Bad Request";
+                }
+            }
+        }
+
+        public async Task<List<Usuario>> Listar()
+        {
+            using (var client = new HttpClient())
+            {
+                try
+                {
+                    Uri uri = new Uri(string.Format("http://IP_V4_ADRESS:8000/api/Usuario"));
+
+                    HttpResponseMessage response = await client.GetAsync(uri);
+
+                    if (response.ReasonPhrase == "OK")
+                    {
+                        var content = await response.Content.ReadAsStringAsync();
+
+                        return JsonConvert.DeserializeObject<List<Usuario>>(content); 
+                    }
+                    else 
+                        return null;
+                }
+                catch (Exception)
+                {
+                    return null;
                 }
             }
         }
