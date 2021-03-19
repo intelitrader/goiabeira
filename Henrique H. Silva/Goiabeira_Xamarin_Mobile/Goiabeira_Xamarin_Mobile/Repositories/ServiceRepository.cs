@@ -16,7 +16,7 @@ namespace Goiabeira_Xamarin_Mobile.Repositories
             {
                 try
                 {
-                    Uri uri = new Uri(string.Format("http://IP_V4_ADRESS:8000/api/Usuario"));
+                    Uri uri = new Uri(string.Format("http://IPV4_ADDRESS:8000/api/Usuario"));
                     var content = new StringContent(JsonConvert.SerializeObject(NovoUsuario), Encoding.UTF8, "application/json");
                 
                     HttpResponseMessage response = await client.PostAsync(uri, content);
