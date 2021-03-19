@@ -4,9 +4,9 @@
 
 ## Para rodar a api:
 
-1. Faça um git clone do GOGO-5.
+1. Abra a pasta chamada LucasGoncalves.
 2. Abra o projeto. 
-3. Abra a pasta Properties > lauchSettings.json. Vá para applicationUrl e troque de *http://localhost:5000* para *http://192.168.1.2:5000*.
+3. Abra a pasta Properties > lauchSettings.json. Vá para applicationUrl e troque de *http://localhost:5000* para *http://(IPv4 Da sua maquina):5000*.
 4. Rode a aplicação.
 
 ## Como fazer o cadastro:
