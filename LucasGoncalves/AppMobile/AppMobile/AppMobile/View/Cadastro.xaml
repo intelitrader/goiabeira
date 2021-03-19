@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             mc:Ignorable="d"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="AppMobile.View.Cadastro">
+
+    <ContentPage.Content>
+        <StackLayout BackgroundColor="Black"   >
+            <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+
+            <StackLayout Margin="0 , 10, 0 ,0">
+                <Image Source="AppMobile.png"  Aspect="AspectFit" WidthRequest="40" HeightRequest="40" />
+                <Label Text="Cadastro" FontSize="20" TextColor="White" HorizontalOptions="Center" FontAttributes="Italic"/>
+            </StackLayout>
+
+                <Frame  HorizontalOptions="Center" HeightRequest="40" Margin="0, 35, 0, 0"  CornerRadius="30">
+                    <Entry x:Name="firstNameInput" Placeholder="Nome" ClearButtonVisibility="WhileEditing" TextColor="Black"  HorizontalOptions="Center" WidthRequest="250" Keyboard="Default" />
+            </Frame>
+
+                <Frame  HorizontalOptions="Center"  HeightRequest="40" Margin="0, 15, 0, 0"  CornerRadius="30">
+                    <Entry x:Name="surNameInput" Placeholder="Sobrenome" ClearButtonVisibility="WhileEditing" TextColor="Black" HorizontalOptions="Center"  WidthRequest="250"  Keyboard="Default"/>
+            </Frame>
+
+            <Frame  HorizontalOptions="Center" HeightRequest="40" Margin="0, 15, 0, 0"  CornerRadius="30">
+                <Entry x:Name="ageInput" Placeholder="Idade" VerticalOptions="Center" ClearButtonVisibility="WhileEditing" TextColor="Black"  HorizontalOptions="Center" WidthRequest="250" Keyboard="Numeric" />
+            </Frame>
+
+
+
+            <Button Clicked="BtnCallWS_Click" x:Name="BtnCallWS" Text="Cadastrar" HorizontalOptions="Center" Margin="0,30, 0, 0" Padding="8, 0, 8, 0" CornerRadius="15" BackgroundColor="#C971FF" TextColor="#F9EEF1" WidthRequest="200" FontAttributes="Bold" FontSize="15"/>
+        </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
