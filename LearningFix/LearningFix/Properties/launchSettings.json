@@ -2,7 +2,7 @@
   "profiles": {
     "LearningFix": {
       "commandName": "Executable",
-      "executablePath": "C:\\Users\\Lucas\\Desktop\\LearningFix\\LearningFix\\bin\\Debug\\net5.0\\LearningFix.exe",
+      "executablePath": "C:\\Users\\Lucas\\Desktop\\goiabeira\\LearningFix\\LearningFix\\bin\\Debug\\net5.0\\LearningFix.exe",
       "commandLineArgs": "simpleacc.cfg"
     }
   }

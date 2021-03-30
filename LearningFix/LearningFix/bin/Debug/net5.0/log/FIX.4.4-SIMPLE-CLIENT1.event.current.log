@@ -18,3 +18,50 @@
 20210330-08:12:28.479 : Session reset: ResetOnLogout
 20210330-08:12:28.480 : Session FIX.4.4:SIMPLE->CLIENT1 disconnecting: Received logout request
 20210330-08:12:28.489 : Session reset: ResetOnDisconnect
+20210330-14:47:50.446 : Created session
+20210330-14:47:59.600 : Created session
+20210330-14:48:10.891 : Created session
+20210330-14:48:16.691 : FIX.4.4:SIMPLE->CLIENT1 Socket Reader 35320229 accepting session FIX.4.4:SIMPLE->CLIENT1 from 127.0.0.1:50483
+20210330-14:48:16.691 : FIX.4.4:SIMPLE->CLIENT1 Acceptor heartbeat set to 0 seconds
+20210330-14:48:16.766 : Session reset: ResetOnLogon
+20210330-14:48:16.862 : Received logon
+20210330-14:48:16.922 : Responding to logon request
+20210330-14:48:34.357 : Message 3 Rejected: Invalid MsgType (Field=35)
+20210330-14:48:51.169 : Received logout request
+20210330-14:48:51.203 : Sending logout response
+20210330-14:48:51.230 : Session reset: ResetOnLogout
+20210330-14:48:51.230 : Session FIX.4.4:SIMPLE->CLIENT1 disconnecting: Received logout request
+20210330-14:48:51.239 : Session reset: ResetOnDisconnect
+20210330-14:49:59.767 : Created session
+20210330-14:50:09.148 : FIX.4.4:SIMPLE->CLIENT1 Socket Reader 35320229 accepting session FIX.4.4:SIMPLE->CLIENT1 from 127.0.0.1:50525
+20210330-14:50:09.148 : FIX.4.4:SIMPLE->CLIENT1 Acceptor heartbeat set to 0 seconds
+20210330-14:50:09.186 : Session reset: ResetOnLogon
+20210330-14:50:09.275 : Received logon
+20210330-14:50:09.338 : Responding to logon request
+20210330-14:50:09.339 : MsgSeqNum too high, expecting 1 but received 5
+20210330-14:50:09.396 : Sent ResendRequest FROM: 1 TO: 0
+20210330-14:50:23.286 : Message 6 Rejected: Required tag missing (Field=453)
+20210330-14:50:28.081 : MsgSeqNum too high, expecting 1 but received 7
+20210330-14:50:28.081 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-14:50:45.258 : Sent test request TEST
+20210330-14:50:45.260 : MsgSeqNum too high, expecting 1 but received 8
+20210330-14:50:45.260 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-14:50:58.093 : MsgSeqNum too high, expecting 1 but received 9
+20210330-14:50:58.093 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-14:51:28.866 : Created session
+20210330-14:51:36.553 : Created session
+20210330-14:51:42.796 : FIX.4.4:SIMPLE->CLIENT1 Socket Reader 35320229 accepting session FIX.4.4:SIMPLE->CLIENT1 from 127.0.0.1:50561
+20210330-14:51:42.796 : FIX.4.4:SIMPLE->CLIENT1 Acceptor heartbeat set to 0 seconds
+20210330-14:51:42.835 : Session reset: ResetOnLogon
+20210330-14:51:42.897 : Received logon
+20210330-14:51:42.957 : Responding to logon request
+20210330-14:51:42.958 : MsgSeqNum too high, expecting 1 but received 10
+20210330-14:51:43.013 : Sent ResendRequest FROM: 1 TO: 0
+20210330-14:51:52.925 : Message 11 Rejected: Required tag missing (Field=453)
+20210330-14:51:58.114 : MsgSeqNum too high, expecting 1 but received 12
+20210330-14:51:58.114 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-14:52:03.113 : Received logout request
+20210330-14:52:03.150 : Sending logout response
+20210330-14:52:03.181 : Session reset: ResetOnLogout
+20210330-14:52:03.182 : Session FIX.4.4:SIMPLE->CLIENT1 disconnecting: Received logout request
+20210330-14:52:03.192 : Session reset: ResetOnDisconnect
