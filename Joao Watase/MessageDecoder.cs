@@ -10,15 +10,15 @@ namespace QuickfixAcceptor
         public static string Decode(Message message)
         {
             var dataDictionary = new DataDictionary(@"dictionary\FIX44EntrypointGatewayEquities.xml");
-            StringBuilder stringBuilder = new StringBuilder("Fix {\n");
+            var stringBuilder = new StringBuilder("Fix {");
             var msgType = message.Header.GetString(Tags.MsgType);
-            DecodeFieldMap("  ", dataDictionary, stringBuilder, msgType, message.Header);
-            DecodeFieldMap("  ", dataDictionary, stringBuilder, msgType, message);
-            DecodeFieldMap("  ", dataDictionary, stringBuilder, msgType, message.Trailer);
+            DecodeFieldMap(dataDictionary, stringBuilder, msgType, message.Header);
+            DecodeFieldMap(dataDictionary, stringBuilder, msgType, message);
+            DecodeFieldMap(dataDictionary, stringBuilder, msgType, message.Trailer);
             stringBuilder.Append("}");
             return stringBuilder.ToString();
         }
-        public static void DecodeFieldMap(string prefix, DataDictionary dd, StringBuilder str, string msgType, FieldMap fieldMap)
+        public static void DecodeFieldMap(DataDictionary dd, StringBuilder str, string msgType, FieldMap fieldMap)
         {
             
             foreach (var kvp in fieldMap)
@@ -30,7 +30,7 @@ namespace QuickfixAcceptor
                 {
                     value = $"{field.EnumDict[value]} ({value})";
                 }
-                str.AppendFormat("{0}{1} = {2};\n", prefix, field.Name, value);
+                str.AppendFormat("{1} = {2}; ", field.Name, value);
             }
             
         }
