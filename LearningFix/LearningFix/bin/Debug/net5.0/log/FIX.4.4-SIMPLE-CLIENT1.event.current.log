@@ -1,2 +1,20 @@
-20210326-15:17:41.028 : Created session
-20210326-15:58:46.376 : Created session
+20210330-08:11:27.700 : Created session
+20210330-08:11:41.886 : FIX.4.4:SIMPLE->CLIENT1 Socket Reader 35320229 accepting session FIX.4.4:SIMPLE->CLIENT1 from 127.0.0.1:61595
+20210330-08:11:41.886 : FIX.4.4:SIMPLE->CLIENT1 Acceptor heartbeat set to 0 seconds
+20210330-08:11:41.928 : Session reset: ResetOnLogon
+20210330-08:11:41.992 : Received logon
+20210330-08:11:42.051 : Responding to logon request
+20210330-08:11:42.052 : MsgSeqNum too high, expecting 1 but received 4
+20210330-08:11:42.107 : Sent ResendRequest FROM: 1 TO: 0
+20210330-08:11:56.647 : MsgSeqNum too high, expecting 1 but received 5
+20210330-08:11:56.648 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-08:12:18.889 : Sent test request TEST
+20210330-08:12:18.892 : MsgSeqNum too high, expecting 1 but received 6
+20210330-08:12:18.892 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-08:12:26.659 : MsgSeqNum too high, expecting 1 but received 7
+20210330-08:12:26.659 : Already sent ResendRequest FROM: 1 TO: 0.  Not sending another.
+20210330-08:12:28.417 : Received logout request
+20210330-08:12:28.450 : Sending logout response
+20210330-08:12:28.479 : Session reset: ResetOnLogout
+20210330-08:12:28.480 : Session FIX.4.4:SIMPLE->CLIENT1 disconnecting: Received logout request
+20210330-08:12:28.489 : Session reset: ResetOnDisconnect

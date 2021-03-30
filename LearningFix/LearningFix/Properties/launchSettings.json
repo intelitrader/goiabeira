@@ -2,13 +2,8 @@
   "profiles": {
     "LearningFix": {
       "commandName": "Executable",
-      "executablePath": "C:\\Users\\Lucas\\Desktop\\Intelitrader\\LearningFix\\LearningFix\\bin\\Debug\\net5.0\\LearningFix.exe",
-      "commandLineArgs": "simpleacc.cfg",
-      "remoteDebugEnabled": false
-    },
-    "WSL 2": {
-      "commandName": "WSL2",
-      "distributionName": ""
+      "executablePath": "C:\\Users\\Lucas\\Desktop\\LearningFix\\LearningFix\\bin\\Debug\\net5.0\\LearningFix.exe",
+      "commandLineArgs": "simpleacc.cfg"
     }
   }
 }

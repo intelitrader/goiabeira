@@ -5,7 +5,6 @@ namespace LearningFix
 {
     class Program
     {
-        [STAThread]
         static void Main(string[] args)
         {
             if (args.Length != 1)
@@ -22,13 +21,15 @@ namespace LearningFix
                 ILogFactory logFactory = new FileLogFactory(settings);
                 IAcceptor acceptor = new ThreadedSocketAcceptor(app, storeFactory, settings, logFactory);
 
+
+
                 acceptor.Start();
-                while (true)
-                {
-                    System.Console.WriteLine("IN");
-                    Console.ReadLine();
-                }
+                Console.WriteLine("press <enter> to quit");
+                Console.Read();
                 acceptor.Stop();
+
+
+
             }
             catch (System.Exception e)
             {
